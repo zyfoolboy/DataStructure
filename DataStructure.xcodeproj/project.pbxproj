@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		D2E2F63C211C1801000A244C /* StaticLink.c in Sources */ = {isa = PBXBuildFile; fileRef = D2E2F63B211C1801000A244C /* StaticLink.c */; };
 		D2E2F63F211D72FE000A244C /* Joseph.c in Sources */ = {isa = PBXBuildFile; fileRef = D2E2F63E211D72FE000A244C /* Joseph.c */; };
+		D2E2F645211D8F10000A244C /* DoublyLinkedList.c in Sources */ = {isa = PBXBuildFile; fileRef = D2E2F644211D8F10000A244C /* DoublyLinkedList.c */; };
 		D2E66848211BDC92007C13B9 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = D2E66847211BDC92007C13B9 /* main.c */; };
 		D2E66850211BDCD2007C13B9 /* Table.c in Sources */ = {isa = PBXBuildFile; fileRef = D2E6684F211BDCD2007C13B9 /* Table.c */; };
 		D2E66853211BE0DF007C13B9 /* Link.c in Sources */ = {isa = PBXBuildFile; fileRef = D2E66852211BE0DF007C13B9 /* Link.c */; };
@@ -31,6 +32,8 @@
 		D2E2F63B211C1801000A244C /* StaticLink.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = StaticLink.c; sourceTree = "<group>"; };
 		D2E2F63D211D72FE000A244C /* Joseph.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Joseph.h; sourceTree = "<group>"; };
 		D2E2F63E211D72FE000A244C /* Joseph.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Joseph.c; sourceTree = "<group>"; };
+		D2E2F643211D8F10000A244C /* DoublyLinkedList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DoublyLinkedList.h; sourceTree = "<group>"; };
+		D2E2F644211D8F10000A244C /* DoublyLinkedList.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = DoublyLinkedList.c; sourceTree = "<group>"; };
 		D2E66844211BDC92007C13B9 /* DataStructure */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DataStructure; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2E66847211BDC92007C13B9 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		D2E6684E211BDCD2007C13B9 /* Table.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Table.h; sourceTree = "<group>"; };
@@ -78,6 +81,8 @@
 				D2E2F63B211C1801000A244C /* StaticLink.c */,
 				D2E2F63D211D72FE000A244C /* Joseph.h */,
 				D2E2F63E211D72FE000A244C /* Joseph.c */,
+				D2E2F643211D8F10000A244C /* DoublyLinkedList.h */,
+				D2E2F644211D8F10000A244C /* DoublyLinkedList.c */,
 			);
 			path = DataStructure;
 			sourceTree = "<group>";
@@ -141,6 +146,7 @@
 				D2E2F63F211D72FE000A244C /* Joseph.c in Sources */,
 				D2E66850211BDCD2007C13B9 /* Table.c in Sources */,
 				D2E66848211BDC92007C13B9 /* main.c in Sources */,
+				D2E2F645211D8F10000A244C /* DoublyLinkedList.c in Sources */,
 				D2E66853211BE0DF007C13B9 /* Link.c in Sources */,
 				D2E2F63C211C1801000A244C /* StaticLink.c in Sources */,
 			);

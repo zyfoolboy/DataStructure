@@ -11,11 +11,13 @@
 #include "Link.h"
 #include "StaticLink.h"
 #include "Joseph.h"
+#include "DoublyLinkedList.h"
 
 void testTable(void);
 void testLink(void);
 void testStaticLink(void);
 void testJoseph(void);
+void testDoublyLink(void);
 
 int main(int argc, const char * argv[]) {
     // insert code here...
@@ -23,8 +25,26 @@ int main(int argc, const char * argv[]) {
     testLink();
     testStaticLink();
     testJoseph();
+    testDoublyLink();
     
     return 0;
+}
+
+void testDoublyLink(void) {
+    doubly_node *head = initDoublyList();
+    displayDoublyList(head);
+    
+    printf("在位置 3 插入 9 ：\n");
+    insertDoublyNode(head, 3, 9);
+    displayDoublyList(head);
+    
+    printf("在位置 4 的值改为 10 ：\n");
+    amendDoublyList(head, 4, 10);
+    displayDoublyList(head);
+    
+    printf("删除 2 ：\n");
+    deleteDoublyNode(head, 2);
+    displayDoublyList(head);
 }
 
 void testTable() {
@@ -103,5 +123,5 @@ void testJoseph() {
     node *head = initCycle(5);
     
     int last = findLastNode(head, 3, 2);
-    printf("%d 胜出", last);
+    printf("%d 胜出\n", last);
 }
