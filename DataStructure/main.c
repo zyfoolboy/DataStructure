@@ -12,12 +12,16 @@
 #include "StaticLink.h"
 #include "Joseph.h"
 #include "DoublyLinkedList.h"
+#include "Stack.h"
+#include "LineStack.h"
 
 void testTable(void);
 void testLink(void);
 void testStaticLink(void);
 void testJoseph(void);
 void testDoublyLink(void);
+void testStack(void);
+void testLineStack(void);
 
 int main(int argc, const char * argv[]) {
     // insert code here...
@@ -26,8 +30,38 @@ int main(int argc, const char * argv[]) {
     testStaticLink();
     testJoseph();
     testDoublyLink();
+    testStack();
+    testLineStack();
     
     return 0;
+}
+
+void testLineStack() {
+    lineStack *stack = NULL;
+    stack = lineStackPush(stack, 'a');
+    stack = lineStackPush(stack, 'b');
+    stack = lineStackPush(stack, 'c');
+    stack = lineStackPush(stack, 'd');
+    stack = lineStackPop(stack);
+    stack = lineStackPop(stack);
+    stack = lineStackPop(stack);
+    stack = lineStackPop(stack);
+    stack = lineStackPop(stack);
+    stack = lineStackPop(stack);
+}
+
+void testStack() {
+    char a[100];
+    int top = -1;
+    top=push(a, top, 'a');
+    top=push(a, top, 'b');
+    top=push(a, top, 'c');
+    top=push(a, top, 'd');
+    top=pop(a, top);
+    top=pop(a, top);
+    top=pop(a, top);
+    top=pop(a, top);
+    top=pop(a, top);
 }
 
 void testDoublyLink(void) {
